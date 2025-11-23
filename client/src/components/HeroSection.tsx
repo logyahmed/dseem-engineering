@@ -17,10 +17,10 @@ export default function HeroSection({ onContactClick }: HeroSectionProps) {
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 text-center">
         <h1 className="font-heading font-bold text-5xl md:text-6xl lg:text-8xl text-white mb-6 leading-tight">
-          الهندسة المتقدمة
+          شركة دسيم
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-12 max-w-3xl mx-auto leading-loose">
-          نبني المستقبل بخبرة هندسية متميزة ورؤية إبداعية
+         شركة سعودية متخصصة في تقديم  الاستشارات الهندسية في كل من مجال الامن والسلامة والوقاية من الحريق 
         </p>
         <Button
           size="lg"
