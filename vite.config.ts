@@ -2,17 +2,13 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-// حل بديل لـ __dirname في ESM
 const __dirname = new URL(".", import.meta.url).pathname;
 
 export default defineConfig({
-  plugins: [
-    react(),
-    // حزفنا إضافات Replit لأنها للتجارب فقط وتعمل مشاكل في Vercel
-  ],
+  plugins: [react()],
 
-  // مجلد المشروع الأساسي لـ Vite هو client (فيه index.html)
-  root: path.resolve(__dirname, "client"),
+  // جذر المشروع الحقيقي هو مكان index.html
+  root: __dirname,
 
   resolve: {
     alias: {
@@ -22,16 +18,15 @@ export default defineConfig({
     },
   },
 
-  // نخلي الملفات الجاهزة في dist/public عشان Vercel يقدر يقرأها
   build: {
-    outDir: path.resolve(__dirname, "dist/public"),
+    // هنا Vite سيخرج المشاريع داخل dist
+    outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
 
   server: {
     fs: {
       strict: true,
-      deny: ["**/.*"],
     },
   },
 });
