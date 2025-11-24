@@ -59,7 +59,7 @@ const projects: Project[] = [
     title: "نادي اليخوت", 
 
     description: "إعداد خطة طوارئ بحرية وبرية متكاملة (Integrated Marine Safety Plan) تشمل المرسى والمنشآت البرية.اً",
-    category: "االرياض",
+    category: "جدة",
     image: water
   }
 ];
