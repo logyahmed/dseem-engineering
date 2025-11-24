@@ -4,7 +4,7 @@ import { useState } from "react";
 import PortfolioLightbox from "@/components/PortfolioLightbox";
 
 import bridge from "@assets/generated_images/diriya-nights.jpg";
-import commercial from "@assets/generated_images/Portfolio_commercial_building_project_725d133a.png";
+import commercial from "@assets/generated_images/groves-night.jpg";
 import industrial from "@assets/generated_images/Portfolio_industrial_facility_project_537bf96f.png";
 import highway from "@assets/generated_images/Portfolio_highway_infrastructure_project_375900ca.png";
 import residential from "@assets/generated_images/Portfolio_residential_complex_project_13498070.png";
