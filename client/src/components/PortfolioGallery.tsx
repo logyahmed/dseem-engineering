@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 import PortfolioLightbox from "@/components/PortfolioLightbox";
 
-import bridge from "@assets/generated_images/Portfolio_bridge_infrastructure_project_9f7e5e8f.png";
+import bridge from "@assets/generated_images/diriya-nights.jpg";
 import commercial from "@assets/generated_images/Portfolio_commercial_building_project_725d133a.png";
 import industrial from "@assets/generated_images/Portfolio_industrial_facility_project_537bf96f.png";
 import highway from "@assets/generated_images/Portfolio_highway_infrastructure_project_375900ca.png";
