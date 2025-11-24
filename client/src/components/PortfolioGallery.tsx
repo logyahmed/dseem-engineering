@@ -63,6 +63,7 @@ const projects: Project[] = [
     image: water
   }
 ];
+export { default as PortfolioGallery } from "./PortfolioGallery";
 
 export default function PortfolioGallery() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
