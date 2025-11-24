@@ -3,12 +3,18 @@ import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 import PortfolioLightbox from "@/components/PortfolioLightbox";
 
-import bridge from "@assets/generated_images/diriya-nights.jpg";
-import commercial from "@assets/generated_images/groves-night.jpg";
-import industrial from "@assets/generated_images/city-walk-jeddah.jpg";
-import highway from "@assets/generated_images/Boulevard-World.jpg";
-import residential from "@assets/generated_images/Boulevard-city.jpg";
-import water from "@assets/generated_images/Yacht-Club.jpg";
+import bridge from "@/attached_assets
+/generated_images/diriya-nights.jpg";
+import commercial from "@/attached_assets
+/generated_images/groves-night.jpg";
+import industrial from "@/attached_assets
+/generated_images/city-walk-jeddah.jpg";
+import highway from "@/attached_assets
+/generated_images/Boulevard-World.jpg";
+import residential from "@/attached_assets
+/generated_images/Boulevard-city.jpg";
+import water from "@/attached_assets
+/generated_images/Yacht-Club.jpg";
 
 export interface Project {
   id: number;
