@@ -5,10 +5,10 @@ import PortfolioLightbox from "@/components/PortfolioLightbox";
 
 import bridge from "@assets/generated_images/diriya-nights.jpg";
 import commercial from "@assets/generated_images/groves-night.jpg";
-import industrial from "@assets/generated_images/Portfolio_industrial_facility_project_537bf96f.png";
-import highway from "@assets/generated_images/Portfolio_highway_infrastructure_project_375900ca.png";
-import residential from "@assets/generated_images/Portfolio_residential_complex_project_13498070.png";
-import water from "@assets/generated_images/Portfolio_water_facility_project_880f482b.png";
+import industrial from "@assets/generated_images/city-walk-jeddah.jpg";
+import highway from "@assets/generated_images/Boulevard-World.jpg";
+import residential from "@assets/generated_images/Boulevard-city.jpg";
+import water from "@assets/generated_images/Yacht-Club.jpg";
 
 export interface Project {
   id: number;
@@ -35,7 +35,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "سيتي ووك جدة",
+    title: "سيتي ووك",
     description: "تحديد نقاط التجمع ومخارج الطوارئ بدقة وفق معايير الدفاع المدني السعودي",
     category: "جدة",
     image: industrial
