@@ -34,8 +34,7 @@ export default function PortfolioLightbox({
   };
 
   return 
-    (<Dialog open onOpenChange={(open) => !open && onClose()}>
-
+    <Dialog open={true} onOpenChange={onClose}>
       <DialogContent className="max-w-6xl p-0 gap-0" data-testid="dialog-portfolio-lightbox">
         <div className="relative">
           <Button
