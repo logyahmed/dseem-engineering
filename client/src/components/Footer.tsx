@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <h3 className="font-heading font-bold text-2xl mb-6">الهندسة المتقدمة</h3>
             <p className="text-muted-foreground leading-loose">
-              شركة استشارات هندسية متخصصة في تصميم وتنفيذ المشاريع الهندسية الكبرى
+             دسيم هي شركة سعودية متخصصة في تقديم  الاستشارات الهندسية في كل من مجال الامن والسلامة والوقاية من الحريق
             </p>
           </div>
 
@@ -40,8 +40,8 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-6">معلومات الاتصال</h4>
             <ul className="space-y-3 text-muted-foreground">
               <li>الرياض، المملكة العربية السعودية</li>
-              <li dir="ltr">+966 50 000 0000</li>
-              <li dir="ltr">info@engineering.com</li>
+              <li dir="ltr">+966 55 110 7671</li>
+              <li dir="ltr">dseem.sa@gmail.com</li>
             </ul>
           </div>
 
