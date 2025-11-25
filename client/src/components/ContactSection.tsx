@@ -28,9 +28,10 @@ export default function ContactSection() {
   };
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent("مرحبا، أود الاستفسار عن خدماتكم.");
-    window.open(wa.link/5liknp?text=${message}`, '_blank');
+  const message = encodeURIComponent("مرحبا، أود الاستفسار عن خدماتكم.");
+  window.open(`https://wa.link/5liknp?text=${message}`, '_blank');
   };
+
 
   return (
     <section className="py-20 lg:py-32 bg-background" id="contact">
