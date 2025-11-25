@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -19,7 +19,7 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Contact form submitted:', formData);
+    console.log("Contact form submitted:", formData);
     toast({
       title: "تم إرسال الرسالة بنجاح",
       description: "سنتواصل معك في أقرب وقت ممكن",
@@ -28,10 +28,9 @@ export default function ContactSection() {
   };
 
   const handleWhatsApp = () => {
-  const message = encodeURIComponent("مرحبا، أود الاستفسار عن خدماتكم.");
-  window.open(`https://wa.link/5liknp?text=${message}`, '_blank');
+    const message = encodeURIComponent("مرحبا، أود الاستفسار عن خدماتكم.");
+    window.open(`https://wa.me/966551107671?text=${message}`, "_blank");
   };
-
 
   return (
     <section className="py-20 lg:py-32 bg-background" id="contact">
@@ -54,10 +53,11 @@ export default function ContactSection() {
                 <Input
                   id="name"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                   required
                   className="text-lg"
-                  data-testid="input-contact-name"
                 />
               </div>
 
@@ -67,10 +67,11 @@ export default function ContactSection() {
                   id="email"
                   type="email"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                   required
                   className="text-lg"
-                  data-testid="input-contact-email"
                 />
               </div>
 
@@ -80,10 +81,11 @@ export default function ContactSection() {
                   id="phone"
                   type="tel"
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, phone: e.target.value })
+                  }
                   required
                   className="text-lg"
-                  data-testid="input-contact-phone"
                 />
               </div>
 
@@ -92,15 +94,20 @@ export default function ContactSection() {
                 <Textarea
                   id="message"
                   value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
                   required
                   rows={5}
                   className="text-lg resize-none"
-                  data-testid="input-contact-message"
                 />
               </div>
 
-              <Button type="submit" size="lg" className="w-full md:w-auto px-12" data-testid="button-submit-contact">
+              <Button
+                type="submit"
+                size="lg"
+                className="w-full md:w-auto px-12"
+              >
                 إرسال
               </Button>
             </form>
@@ -112,7 +119,6 @@ export default function ContactSection() {
                 size="lg"
                 className="w-full md:w-auto gap-3"
                 onClick={handleWhatsApp}
-                data-testid="button-whatsapp"
               >
                 <SiWhatsapp className="w-5 h-5" />
                 تواصل عبر واتساب
@@ -144,7 +150,9 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">الهاتف</h3>
-                  <p className="text-muted-foreground" dir="ltr">+966 50 000 0000</p>
+                  <p className="text-muted-foreground" dir="ltr">
+                    +966 55 110 7671
+                  </p>
                 </div>
               </div>
             </Card>
@@ -156,7 +164,9 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">البريد الإلكتروني</h3>
-                  <p className="text-muted-foreground" dir="ltr">info@engineering.com</p>
+                  <p className="text-muted-foreground" dir="ltr">
+                    info@engineering.com
+                  </p>
                 </div>
               </div>
             </Card>
