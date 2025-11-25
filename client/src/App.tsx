@@ -27,3 +27,20 @@ function App() {
 }
 
 export default App;
+import AccreditationsSection from "@/components/AccreditationsSection";
+
+// ...
+
+export default function App() {
+  return (
+    <>
+      <HeroSection />
+      <AboutSection />
+      <PortfolioGallery />
+      <AccreditationsSection />   {/* ← اضفها هنا */}
+      <ContactSection />
+      {/* باقي السكاشن */}
+    </>
+  );
+}
+
