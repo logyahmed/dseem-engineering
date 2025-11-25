@@ -56,7 +56,7 @@ export default function SignupModal({ open, onOpenChange }: SignupModalProps) {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
-                  placeholder="email@example.com"
+                  placeholder="info@dseem.com"
                   dir="ltr"
                   data-testid="input-signup-email"
                 />
@@ -70,7 +70,7 @@ export default function SignupModal({ open, onOpenChange }: SignupModalProps) {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   required
-                  placeholder="+966 50 000 0000"
+                  placeholder="+966 55 110 7671"
                   dir="ltr"
                   data-testid="input-signup-phone"
                 />
