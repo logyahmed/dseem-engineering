@@ -74,7 +74,7 @@ export default function PortfolioGallery() {
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="text-center mb-16">
             <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6">
-             معرض مشاريع دسيم
+               معرض مشاريع 
 
             </h2>
             <div className="w-16 h-1 bg-primary mx-auto mb-6" />
