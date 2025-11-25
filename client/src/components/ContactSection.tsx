@@ -29,7 +29,7 @@ export default function ContactSection() {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent("مرحبا، أود الاستفسار عن خدماتكم.");
-    window.open(`https://wa.me/966500000000?text=${message}`, '_blank');
+    window.open(wa.link/5liknp?text=${message}`, '_blank');
   };
 
   return (
