@@ -1,16 +1,3 @@
-import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import type { Project } from "./PortfolioGallery";
-
-interface PortfolioLightboxProps {
-  project: Project;
-  allProjects: Project[];
-  onClose: () => void;
-  onNavigate: (project: Project) => void;
-}
-
 export default function PortfolioLightbox({
   project,
   allProjects,
@@ -33,7 +20,7 @@ export default function PortfolioLightbox({
     }
   };
 
-  return 
+  return (
     <Dialog open={true} onOpenChange={onClose}>
       <DialogContent className="max-w-6xl p-0 gap-0" data-testid="dialog-portfolio-lightbox">
         <div className="relative">
