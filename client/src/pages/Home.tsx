@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import VisionMissionSection from "@/components/VisionMissionSection";
 import PrinciplesSection from "@/components/PrinciplesSection";
 import PortfolioGallery from "@/components/PortfolioGallery";
+import AccreditationsSection from "@/components/AccreditationsSection"; // ⬅️ جديد
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SignupModal from "@/components/SignupModal";
@@ -14,18 +15,18 @@ export default function Home() {
   const [showFloatingButton, setShowFloatingButton] = useState(true);
 
   useEffect(() => {
-    const hasVisited = localStorage.getItem('hasVisited');
+    const hasVisited = localStorage.getItem("hasVisited");
     if (!hasVisited) {
       setTimeout(() => {
         setShowSignupModal(true);
-        localStorage.setItem('hasVisited', 'true');
+        localStorage.setItem("hasVisited", "true");
       }, 2000);
     }
   }, []);
 
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    contactSection?.scrollIntoView({ behavior: 'smooth' });
+    const contactSection = document.getElementById("contact");
+    contactSection?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -35,6 +36,10 @@ export default function Home() {
       <VisionMissionSection />
       <PrinciplesSection />
       <PortfolioGallery />
+
+      {/* ⬅️ سكشن الاعتمادات هنا */}
+      <AccreditationsSection />
+
       <ContactSection />
       <Footer />
 
